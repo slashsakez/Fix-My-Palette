@@ -32,10 +32,10 @@ nav {
   position: relative;
   height: 56px;
 
-  width: clamp(200px, 68%, 1120px);
+  width: clamp(200px, 100%, 1120px);
 
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -49,6 +49,8 @@ nav .title {
   text-align: center;
   margin: 0;
   padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
 }
 
 .palette-maker {
@@ -171,7 +173,7 @@ nav .title {
   outline: none;
   border: none;
   font-weight: 700;
-  margin: 2px;
+
   font-size: 11.2px;
   border: 1px dashed grey;
   border-radius: 5.34px;
@@ -195,7 +197,7 @@ nav .title {
   padding: 4px;
   display: grid;
   gap: 9px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 160px;
   justify-content: center;
   align-items: center;
@@ -359,6 +361,14 @@ nav .title {
     justify-content: center;
     align-items: center;
   }
+  .delete-btn {
+    top: 90%;
+    background-color: white;
+    right: 50%;
+    margin: 0;
+    padding: 11px;
+    transform: translateX(50%);
+  }
 }
 .menu-link {
   z-index: 4;
@@ -368,8 +378,9 @@ nav .title {
   margin: 0;
   color: rgba(27, 26, 26, 0.865);
   text-decoration: none;
-  position: absolute;
-  left: 35px;
+
+  font-size: 0.9rem;
+  left: 0px;
   top: 20px;
   &:hover {
     text-decoration: underline;
